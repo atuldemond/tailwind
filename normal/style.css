@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  /* background-color: antiquewhite; */
 }
 
 body,
@@ -11,8 +12,6 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background-color: black;
 }
 
 section {
@@ -208,4 +207,238 @@ span:nth-child(7) {
     z-index: 10;
     color: white;
   }
+}
+/* body start from here */
+
+#main {
+  width: 100%;
+  height: -100px;
+  background-color: antiquewhite;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+}
+.upper-header {
+  width: 100%;
+  height: 6vw;
+  border-bottom: 1px solid #0ae448;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.down-header {
+  width: 100%;
+  height: 8vw;
+  border: 2px solid rgba(0, 128, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: all ease 0.3s;
+  padding-bottom: 1vw;
+}
+.left-global h2:hover {
+  color: #0ae448;
+  transition: all 0.3s ease-out;
+  scale: 1.2;
+  cursor: pointer;
+  background-color: black;
+  padding: 0.5vw;
+}
+.right-upper h3:hover {
+  color: #0ae448;
+  transition: all 0.3s ease-out;
+  scale: 1.2;
+  cursor: pointer;
+  background-color: black;
+  padding: 0.5vw;
+}
+
+.right-upper {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  border: 2px solid rgba(255, 0, 0, 0);
+  width: 300px;
+  height: 100px;
+}
+.logo img {
+  width: 300px;
+  height: 150px;
+}
+.down-header h3:hover {
+  color: #0ae448;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  scale: 1.2;
+  background-color: black;
+  padding: 0.5vw;
+}
+
+.icon {
+  display: none;
+}
+.mobo-logo {
+  display: none;
+}
+.openmenu {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .upper-header {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 100px;
+    margin-left: 20px;
+  }
+
+  .left-global {
+    display: none;
+  }
+
+  .right-upper {
+    display: none;
+  }
+  .down-header {
+    display: none;
+  }
+
+  .openmenu {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(0, 0, 0);
+    left: -100%;
+  }
+
+  .openmenu ul {
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    line-height: 30px;
+    /* border: 2px solid red; */
+    transform: scale(0.7);
+  }
+
+  .openmenu ul li {
+    width: 50vw;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.8);
+    padding: 5vw;
+    font-size: 9vw;
+    margin: 5vw;
+    color: black;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+  }
+
+  .openmenu ul li:hover {
+    background-color: black;
+    color: #0ae448;
+    text-decoration: underline;
+  }
+
+  .leftt {
+    width: 7vw;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bolder;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5vw;
+    font-size: larger;
+  }
+
+  .icon {
+    display: block;
+    position: relative;
+  }
+  #logo1 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  #logo2 {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -50px;
+  }
+}
+
+.car-image {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/MCLAREN_ARTURA_SPIDER_HERO_REAR_34_LOW_HOME.jpg");
+  background-size: 100% 100vh;
+}
+.car-image h1 {
+  font-size: 10vw;
+  opacity: 0.3;
+  color: #fff;
+  text-align: center;
+}
+.car-image h1::before {
+  content: "BEYOND";
+
+  color: #0ae448;
+}
+
+.car-image h1::after {
+  content: "LIMITS";
+  color: #0ae448;
+}
+#move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 14vw;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+.scroll-text {
+  display: flex;
+  gap: 10vw;
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.scroll-text h1 {
+  font-size: 10vw;
+  color: #fff;
+}
+.scroll-text h1::before {
+  content: "Mc";
+  color: #5f5f5f;
+  opacity: 1;
+}
+.scroll-text h1::after {
+  content: "LAREN";
+  color: #0ae448d1;
 }

@@ -42,3 +42,45 @@ h1.addEventListener("mouseout", function () {
     scale: 1,
   });
 });
+
+// pre loader script
+
+var loader = document.querySelector("#loader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
+//responsive header -------------------------
+
+let logo1 = document.querySelector("#logo1");
+let logo2 = document.querySelector("#logo2");
+let menu = document.querySelector(".openmenu");
+
+logo1.addEventListener("click", function () {
+  menu.classList.toggle("openmenu");
+  menu.style.left = "0px";
+  logo2.style.display = "block";
+  logo1.style.display = "none";
+});
+
+logo2.addEventListener("click", function () {
+  menu.classList.toggle("openmenu");
+  menu.style.left = "0px";
+  logo2.style.display = "none";
+  logo1.style.display = "block";
+});
+
+// header is completed here---------------
+
+// mcLaren
+const scrollText = document.querySelector(".scroll-text");
+
+gsap.to(scrollText, {
+  xPercent: -100,
+  duration: 10,
+  repeat: -1,
+  ease: "none",
+  modifiers: {
+    xPercent: gsap.utils.unitize((x) => parseFloat(x) % 100),
+  },
+});

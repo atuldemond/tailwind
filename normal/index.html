@@ -5,24 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shooting Star Animation</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div id="cursor"></div>
-    <div id="sky">
-      <section>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </section>
-      <div class="text">
-        <h1>McLaren</h1>
+    <div id="loader">
+      <div id="cursor"></div>
+      <div id="sky">
+        <section>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
+        <div class="text">
+          <h1>McLaren</h1>
+        </div>
+        <div class="mobo">Comming Soon..</div>
       </div>
-      <div class="mobo">Comming Soon..</div>
     </div>
+    <!-- header is start from here -->
+    <div id="main">
+      <div class="header">
+        <div class="mobo-logo">
+          <img src="./images/McLaren-Logo.png" alt="" />
+        </div>
+        <div class="upper-header">
+          <div class="left-global"><h2>GLOBAL</h2></div>
+          <div class="right-upper">
+            <div class="meclaren"><h3>McLAREN</h3></div>
+            <div class="automotive"><h3>AUTOMOTIVE</h3></div>
+          </div>
+          <div class="icon">
+            <i id="logo1" class="fa-solid fa-2xl fa-bars"></i>
+            <i id="logo2" class="fa-solid fa-2xl fa-x"></i>
+          </div>
+        </div>
+        <div class="down-header">
+          <div class="logo">
+            <img src="./images/McLaren-Logo.png" alt="" />
+          </div>
+          <h3>MODELS</h3>
+          <h3>BESPOKE</h3>
+          <h3>OWNERSHIP</h3>
+          <h3>EXPERIENCE</h3>
+          <h3>ABOUT</h3>
+          <h3>PRE-OWNED</h3>
+        </div>
+      </div>
+      <div class="car-image">
+        <h1>YOUR SPEED</h1>
+      </div>
+      <div id="container">
+        <div class="scroll-text">
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
+        </div>
+    </div>
+
+    <div class="openmenu">
+      <ul>
+        <li>Models</li>
+        <li>Bespoke</li>
+        <li>Ownership</li>
+        <li>Experience</li>
+        <li>About</li>
+        <li>Pre-Owned</li>
+      </ul>
+    </div>
+
+    <!-- body start from here -->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
