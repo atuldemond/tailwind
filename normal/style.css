@@ -5,6 +5,9 @@
   font-family: sans-serif;
   /* background-color: antiquewhite; */
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 body,
 html {
@@ -12,6 +15,8 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow: -moz-scrollbars-none;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -213,7 +218,7 @@ span:nth-child(7) {
 #main {
   width: 100%;
   height: -100px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
@@ -223,7 +228,7 @@ span:nth-child(7) {
 .upper-header {
   width: 100%;
   height: 6vw;
-  border-bottom: 1px solid #0ae448;
+  border-bottom: 1px solid #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -386,6 +391,7 @@ span:nth-child(7) {
   height: 100vh;
   background-image: url("./images/MCLAREN_ARTURA_SPIDER_HERO_REAR_34_LOW_HOME.jpg");
   background-size: 100% 100vh;
+  border-top-left-radius: 20%;
 }
 .car-image h1 {
   font-size: 10vw;
@@ -426,11 +432,11 @@ span:nth-child(7) {
   white-space: nowrap;
   position: absolute;
   width: 100%;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 6vw;
 }
 .scroll-text h1 {
-  font-size: 10vw;
+  font-size: 5vw;
   color: #fff;
 }
 .scroll-text h1::before {
@@ -441,4 +447,417 @@ span:nth-child(7) {
 .scroll-text h1::after {
   content: "LAREN";
   color: #0ae448d1;
+}
+
+.boxes {
+  background-color: rgba(255, 255, 255, 0.997);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.card {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/1.webp");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card h1 {
+  opacity: 10;
+}
+.card:hover {
+  color: #0ae448;
+}
+
+.card2 {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/2.webp");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card2:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card2 h1 {
+  opacity: 10;
+}
+.card2:hover {
+  color: #0ae448;
+}
+
+.card3 {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/3.webp");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card3:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card3 h1 {
+  opacity: 10;
+}
+.card3:hover {
+  color: #0ae448;
+}
+
+.card4 {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/4.webp");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card4:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card4 h1 {
+  opacity: 10;
+}
+.card4:hover {
+  color: #0ae448;
+}
+
+.card5 {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/5.webp");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card5:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card5 h1 {
+  opacity: 10;
+}
+.card5:hover {
+  color: #0ae448;
+}
+.card6 {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/6.png");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+
+  transition: all ease-out 0.3s;
+}
+.card6:hover {
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card6 h1 {
+  opacity: 10;
+}
+.card6:hover {
+  color: #0ae448;
+}
+
+#down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  flex-wrap: wrap;
+}
+.left,
+.right {
+  flex: 1;
+}
+.left {
+  font-size: 2em;
+  font-weight: bold;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.right p {
+  margin: 0 0 1em 0;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.right button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.right button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.gallery {
+  width: 100%;
+
+  background-color: #ffffff;
+  padding-top: 5vw;
+}
+.four1 {
+  width: 100%;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/3.webp");
+  background-position: left;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+.inner-g1 {
+  color: white;
+  background-color: black;
+  font-size: large;
+  width: 40vw;
+  border: 2px solid black;
+  padding: 1vw;
+  transition: all ease-out 0.3s;
+}
+.inner-g1:hover {
+  scale: 0.8;
+}
+.four1 h1 {
+  padding-bottom: 1vw;
+  color: #0ae448;
+}
+.four2 {
+  width: 100%;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/6.png");
+  background-position: right;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5vw;
+}
+.inner-g2 {
+  color: white;
+  background-color: black;
+  font-size: large;
+  width: 40vw;
+  border: 2px solid black;
+  padding: 1vw;
+  transition: all ease-out 0.3s;
+}
+.inner-g2:hover {
+  scale: 0.8;
+}
+.four2 h1 {
+  padding-bottom: 1vw;
+  color: #0ae448;
+}
+.four3 {
+  width: 100%;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/33.webp");
+  background-position: left;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5vw;
+}
+.inner-g3 {
+  color: white;
+  background-color: black;
+  font-size: large;
+  width: 40vw;
+  border: 2px solid black;
+  padding: 1vw;
+  transition: all ease-out 0.3s;
+}
+.inner-g3:hover {
+  scale: 0.8;
+}
+.four3 h1 {
+  padding-bottom: 1vw;
+  color: #0ae448;
+}
+.four4 {
+  width: 100%;
+  height: 20vw;
+  border: 2px solid rgba(255, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url("./images/cars/44.webp");
+  background-position: right;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5vw;
+}
+.four4 h1 {
+  padding-bottom: 1vw;
+  color: #0ae448;
+}
+.inner-g4 {
+  color: white;
+  background-color: black;
+  font-size: large;
+  width: 40vw;
+  border: 2px solid black;
+  padding: 1vw;
+  transition: all ease-out 0.3s;
+}
+.inner-g4:hover {
+  scale: 0.8;
+}
+@media (max-width: 768px) {
+  .four1,
+  .four2,
+  .four3,
+  .four4 {
+    height: auto;
+    background-size: cover;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+
+  .inner-g1,
+  .inner-g2,
+  .inner-g3,
+  .inner-g4 {
+    width: 80vw;
+    padding: 2vw;
+    font-size: medium;
+  }
+
+  .four1,
+  .four2,
+  .four3,
+  .four4 {
+    display: block;
+    text-align: center;
+  }
+
+  .four1 h1,
+  .four2 h1,
+  .four3 h1,
+  .four4 h1 {
+    padding-bottom: 1.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-g1,
+  .inner-g2,
+  .inner-g3,
+  .inner-g4 {
+    width: 90vw;
+    padding: 3vw;
+    font-size: small;
+  }
+
+  .four1 h1,
+  .four2 h1,
+  .four3 h1,
+  .four4 h1 {
+    font-size: larger;
+  }
 }
